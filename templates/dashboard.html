@@ -1,0 +1,36 @@
+{% extends "structure.html" %}
+
+
+{% block title %}
+    <h1>The Dashboard</h1>      
+{% endblock title %}
+
+{% block body %}
+    <h3>
+        This is a the dashboard for {{ g.user.username }}.
+    </h3>
+    <p>This is a list of all your To Do Lists</p>
+
+    <br>
+
+    <p>Add a new To Do List?</p>
+    <form action="/dashboard">
+        <input type="text" name="title" placeholder="Title">
+        <input type="text" name="date_created" placeholder="Date">
+        <input type="text" name="body" placeholder="Body">
+        <input type="text" name="user" placeholder="Username">
+        <input type="text" name="date_modifier" placeholder="Date Modified">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+
+    <div id="list">
+        <p>This is a To Do list:</p>
+        <ul>
+            <li>A list</li>
+            <li>A Second list</li>
+            <li>A Third list</li>
+        </ul>
+    </div>
+{% endblock body %}

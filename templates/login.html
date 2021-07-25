@@ -1,0 +1,18 @@
+{% extends "structure.html" %}
+
+
+{% block title %}
+    <h1>Login</h1>      
+{% endblock title %}
+
+{% block body %}
+    <p>
+        This is the LogIn Page.
+    </p>
+
+    <form action="/login">
+        <input type="email" name="email" placeholder="Enter your email address">
+        <input type="password" name="password" placeholder="Enter your password">
+        <input type="submit" value="Submit">
+    </form>
+{% endblock body %}

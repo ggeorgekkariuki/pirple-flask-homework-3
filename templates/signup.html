@@ -1,0 +1,19 @@
+{% extends "structure.html" %}
+
+
+{% block title %}
+    <h1>The Sign Up Page</h1>      
+{% endblock title %}
+
+{% block body %}
+    <p>
+        This is the Sign Up Page.
+    </p>
+
+    <form action="/signup">
+        <input type="email" name="email" placeholder="Enter your email address">
+        <input type="text" name="username" placeholder="Enter your username">
+        <input type="password" name="password" placeholder="Enter your password">
+        <input type="submit" value="Submit">
+    </form>
+{% endblock body %}
