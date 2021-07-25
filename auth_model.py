@@ -58,3 +58,11 @@ def find_username(id):
     )
 
     username = cursor.fetchone()[0]
+
+    #TODO 1. Given what you've just learned about users and session-management, 
+    # modify the routes, empty templates, database schema accordingly.
+
+    #TODO 2. Based on the DB schema, create and write data models for your application. 
+    # These models should handle the CRUD operations for each of the tables in your database. 
+    # For example, if you have a "tasks" table, there should be a model 
+    # that handles Creating, Reading, Updating and Deleting tasks.
